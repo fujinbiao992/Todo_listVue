@@ -8,11 +8,16 @@
 	 * 3- 设置自定义指令,实现自动获取光标
 	 *
 	 * 4- 添加数据
+	 * 		- 向原有的数组的末尾追加一个数组对象,这个对象包含id content isFinish的状态
+	 * 		- id需要排序并且加一,实现id自增,
+	 * 		id: this.dataList?this.dataList.sort((a,b)=>a.id=b.id)[this.dataList.length-1]['id']+1:1
 	 *
 	 * 5- 计算属性,根据isFinish的状态来计算当前为false的项,false代表是未选中状态
 	 *
 	 * 6- 让全部删除按钮,根据isFinish的状态,来隐藏全部删除按钮
-	 *	
+	 *
+	 * 7-
+	 *
 	*/
 
 	new Vue({
